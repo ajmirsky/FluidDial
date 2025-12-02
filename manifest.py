@@ -99,6 +99,9 @@ def makeManifest():
     addDialType("FluidDial for CYD", "FluidDial for CYD Dial", "FluidDial type")
     addInstallable(fresh_install, True, ["cyddial"])
 
+    addDialType("FluidDial for PiBot CNC Pendant", "FluidDial for PiBot CNC Pendant", "FT5x06 Pendant type")
+    addInstallable(fresh_install, True, ["ft5x06"])
+
 
 makeManifest()
 

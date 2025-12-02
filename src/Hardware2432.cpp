@@ -235,6 +235,15 @@ void init_resistive_cyd() {
 }
 #endif  // RESISTIVE_CYD
 
+#ifdef FT5x06
+    red_button_pin   = GPIO_NUM_4;   // RGB LED Red
+    dial_button_pin  = GPIO_NUM_16;  // RGB LED Blue
+    green_button_pin = GPIO_NUM_17;  // RGB LED Green
+    pinMode(red_button_pin, INPUT_PULLUP);
+    pinMode(dial_button_pin, INPUT_PULLUP);
+    pinMode(green_button_pin, INPUT_PULLUP);
+#endif // FT5x06
+
 bool round_display = false;
 
 const int n_buttons      = 3;
